@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+
+        height: 100%;
+      }
+      .nav {
+        background-color: rgb(243, 247, 130);
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+      }
+      ul {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+        color: orange;
+        text-transform: capitalize;
+      }
+      .side1 {
+        float: left;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .side2 {
+        float: right;
+        margin-right: 70px;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .ul li {
+        display: inline-block;
+        width: 100px;
+        height: 70px;
+      }
+      .nav2 {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(255, 249, 62);
+
+        position: static;
+      }
+      .form {
+        width: 100px;
+        height: 40px;
+        margin-left: 100px;
+        font-weight: 500;
+        float: left;
+      }
+      .bunt {
+        background-color: skyblue;
+        border: 1px solid skyblue;
+        box-shadow: 2px 3px blue;
+        padding: 10px;
+        width: 100px;
+        height: 40px;
+        margin-top: 10px;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      /*  */
+
+      .bunt1 {
+        background-color: greenyellow;
+        border: 1px solid rgb(255, 255, 255);
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        width: 140px;
+        height: 40px;
+        border-radius: 40px;
+        float: left;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 300px;
+      }
+      .p1 {
+        float: left;
+        width: 300px;
+        padding-left: 30px;
+        color: orange;
+        font-weight: 500;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      /* body */
+      .all {
+        background-color: rgb(255, 242, 0);
+        width: 100%;
+        height: 400px;
+      }
+      .mainb {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .aa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+      }
+      .dd:hover,
+      .ds:hover {
+        width: 300px;
+        height: 150px;
+      }
+
+      .dd {
+        /* display: flex;
+        flex-direction: column; */
+        /* border: 4px solid rgb(255, 255, 255); */
+        height: 150px;
+        width: 250px;
+        transition: all 2s;
+      }
+      .ds {
+        /* display: flex;
+        flex-direction: column; */
+        /* border: 4px solid rgb(255, 255, 255); */
+        height: 150px;
+        width: 250px;
+        transition: all 2s;
+      }
+      #d1 {
+        border: 4px solid rgb(11, 11, 11);
+        background-color: rgb(255, 0, 208);
+        background-image: url("kid1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #d2 {
+        border: 4px solid black;
+        background-color: rgb(0, 34, 255);
+        background-image: url("kid2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      #d3 {
+        border: 4px solid black;
+        background-color: rgb(0, 145, 255);
+        background-image: url("kids3.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #d4 {
+        border: 4px solid black;
+        background-color: rgb(136, 255, 0);
+        background-image: url("kids4.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #d5 {
+        border: 4px solid black;
+        background-color: rgb(251, 255, 0);
+        background-image: url("kids5.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      #d6 {
+        border: 4px solid black;
+        background-color: rgb(255, 0, 0);
+        background-image: url("kids6.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* position: absolute;
+
+        top: 196px;
+        left: 604px; */
+      }
+      .main1 {
+        background-color: rgb(25, 89, 25);
+        width: 100%;
+        height: 100px;
+      }
+      .si {
+        padding: 10px 300px;
+        white-space: nowrap;
+        cursor: pointer;
+        height: 56px;
+        line-height: 56px;
+        align-items: center;
+      }
+
+      .ballon {
+        width: 70px;
+        height: 80px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        border: 1px solid red;
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 40px;
+      }
+
+      .ballon:hover {
+        display: contents;
+        width: 90px;
+        height: 90px;
+        background-color: pink;
+        transition: all 1s;
+      }
+      .a1 {
+        background-color: rgb(255, 0, 208);
+      }
+      .a2 {
+        background-color: rgb(255, 225, 0);
+      }
+      .a3 {
+        background-color: rgb(255, 183, 0);
+      }
+      .a4 {
+        background-color: rgb(72, 255, 0);
+      }
+      .a5 {
+        background-color: rgb(0, 208, 255);
+      }
+      .a6 {
+        background-color: rgb(0, 21, 255);
+      }
+      #footer {
+        text-align: center;
+        background-color: rgb(19, 141, 207);
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        position: fixed;
+        bottom: 0;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="side1">
+        <ul>
+          <li><a href="">weekly Newspaper</a></li>
+        </ul>
+      </div>
+      <div class="side2">
+        <ul class="ul">
+          <li><a href=""> apps</a></li>
+          <li><a href=""> help</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="nav2">
+      <div class="form">
+        <button class="bunt">parents</button>
+      </div>
+
+      <div class="next">
+        <button class="bunt1">special</button>
+        <p class="p1">arthur is back and starring in the arthur podcast!!!</p>
+      </div>
+    </div>
+    <div class="all">
+      <div class="mainb">
+        <div class="aa">
+          <div id="d1" class="dd">1</div>
+          <div id="d2" class="dd">2</div>
+          <div id="d3" class="dd">3</div>
+        </div>
+        <div class="aa">
+          <div id="d4" class="ds">4</div>
+          <div id="d5" class="ds">5</div>
+          <div id="d6" class="ds">6</div>
+        </div>
+      </div>
+    </div>
+    <div class="main1">
+      <div class="si">
+        <div class="ballon ball a1"></div>
+        <div class="ballon ball a2"></div>
+        <div class="ballon ball a3"></div>
+        <div class="ballon ball a4"></div>
+        <div class="ballon ball a5"></div>
+        <div class="ballon ball a6"></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="footer"><i>Privacy Policy</i>|Terams of use|Copyright2050</div>
+  </body>
+</html>
